@@ -13,36 +13,30 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>vulnado</name>
 	<description>Demo project for Spring Boot</description>
-
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<version>42.2.5</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
 		<dependency>
 		    <groupId>org.jsoup</groupId>
 		    <artifactId>jsoup</artifactId>
 		    <version>1.8.3</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -65,8 +59,69 @@
 		    <version>0.10.5</version>
 		    <scope>runtime</scope>
 		</dependency>
+	        <!-- Added gRPC dependencies -->
+	        <dependency>
+	            <groupId>io.grpc</groupId>
+	            <artifactId>grpc-netty-shaded</artifactId>
+	            <version>1.67.1</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>io.grpc</groupId>
+	            <artifactId>grpc-protobuf</artifactId>
+	            <version>1.67.1</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>io.grpc</groupId>
+	            <artifactId>grpc-protobuf-lite</artifactId>
+	            <version>1.67.1</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>io.grpc</groupId>
+	            <artifactId>grpc-rls</artifactId>
+	            <version>1.62.2</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>io.grpc</groupId>
+	            <artifactId>grpc-services</artifactId>
+	            <version>1.67.1</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>io.grpc</groupId>
+	            <artifactId>grpc-stub</artifactId>
+	            <version>1.67.1</version>
+	        </dependency>
+	        <!-- Added Google dependencies -->
+	        <dependency>
+	            <groupId>com.google.oauth-client</groupId>
+	            <artifactId>google-oauth-client-appengine</artifactId>
+	            <version>1.30.5</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>com.google.oauth-client</groupId>
+	            <artifactId>google-oauth-client-servlet</artifactId>
+	            <version>1.30.5</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>com.google.protobuf</groupId>
+	            <artifactId>protobuf-java</artifactId>
+	            <version>3.25.5</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>com.google.protobuf</groupId>
+	            <artifactId>protobuf-java-util</artifactId>
+	            <version>3.25.5</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>com.google.re2j</groupId>
+	            <artifactId>re2j</artifactId>
+	            <version>1.7</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>com.googlecode.json-simple</groupId>
+	            <artifactId>json-simple</artifactId>
+	            <version>1.1.1</version>
+	        </dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -75,5 +130,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
