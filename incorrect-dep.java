@@ -1,12 +1,3 @@
-package com.askscio.activity.beam;
-
-import static com.askscio.activity.search.FeedbackLogEntry.VIEW_EVENT;
-import static com.askscio.activity.search.FeedbackLogEntry.VISIBLE_EVENT;
-
-import com.askscio.activity.search.FeedbackLogEntry;
-import com.askscio.beam.core.ScioDoFn;
-import com.askscio.core.ObjectInitializer;
-import com.askscio.proto.document.SessionLog;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.google.common.base.Strings;
 import com.google.protobuf.InvalidProtocolBufferException;
