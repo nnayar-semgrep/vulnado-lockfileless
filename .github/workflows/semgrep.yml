@@ -25,4 +25,4 @@ jobs:
       - run: | 
           apk update
           apk add openjdk17 maven
-          semgrep ci --allow-local-builds --verbose --supply-chain
+          semgrep ci --allow-local-builds --debug --supply-chain
