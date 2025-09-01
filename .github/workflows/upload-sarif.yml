@@ -1,0 +1,16 @@
+name: Upload Existing SARIF
+on:
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  upload-existing-sarif:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Upload SARIF from repo
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: path/to/your-sarif-file.sarif
+          category: manual-upload
